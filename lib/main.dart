@@ -1,11 +1,14 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:weatherapp/home_page.dart';
-import 'package:weatherapp/working_homepage.dart';
+
+enum AppState { NOT_DOWNLOADED, DOWNLOADING, FINISHED_DOWNLOADING }
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+     MyApp(),
+      );
 }
 
 class MyApp extends StatelessWidget {
