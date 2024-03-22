@@ -391,7 +391,6 @@ class _HomePageState extends State<HomePage> {
                         child: Padding(
                           padding: const EdgeInsets.all(10),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               ListTile(
                                 title: Text(
