@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class GradientScaffold extends StatelessWidget {
   final Widget body;
@@ -24,7 +25,13 @@ class GradientScaffold extends StatelessWidget {
             ]
             ),
         ),
-        child: body,
+        child: SafeArea(
+          bottom: false,
+          child: Padding(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.top),
+            child: body,
+          )
+          ),
       ),
     );
   }
