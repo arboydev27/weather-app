@@ -11,6 +11,7 @@ import 'package:intl/intl.dart';
 import 'package:weather/weather.dart';
 import 'package:weatherapp/main.dart';
 import 'package:weatherapp/shared/gradient_scaffold.dart';
+import 'package:weatherapp/shared/key.dart';
 import 'package:weatherapp/shared/locationpermission.dart';
 import 'package:weatherapp/shared/search_box.dart';
 
@@ -28,7 +29,8 @@ class _HomePageState extends State<HomePage> {
   
 
   // Stuff for the OpenWeatherMap API
-  String _apiKey = '4175174f9f561eb404ce5dc34ab95555';
+  //String _apiKey = '4175174f9f561eb404ce5dc34ab95555';
+  String _apiKey = OpenWeatherMapAPI.API_KEY;
   late WeatherFactory ws;
   List<Weather> _data = [];
   AppState _state = AppState.NOT_DOWNLOADED;
